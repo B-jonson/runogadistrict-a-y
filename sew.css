@@ -1,0 +1,57 @@
+
+*{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.drune{
+    align-items: center;
+    background-color: rgb(11, 80, 141);
+}
+
+form.login
+{
+margin: 50px auto;
+padding-left: 15px;
+}
+input{
+    height: 100;
+    width: 200px;
+    border: none;
+    outline: none;
+}
+
+    
+.login{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 80px;
+
+}
+.map{
+    border: 2px solid green;
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 400px;
+    background-color: rgb(103, 146, 118);
+    box-shadow: 0 40px 50px 0;
+}
+.map h1,h2{
+    text-align: center;
+}
+button{
+ width: 150px;
+ height: 35px;
+ margin-left: 40px;
+ background-color: green;
+ border: none;
+ border-radius: 20px;
+ transition: 1s;
+ cursor: pointer;
+}
+button:hover{
+    background-color: white;
+}

@@ -1,0 +1,330 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+#id1 h1{
+    padding-top: 30px;
+}
+#id1{
+    text-align: center;
+    background-color: green;
+    padding: 5px;
+    height: 100px;
+}
+#id2 h3{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: white
+  }
+#id2 label{
+  font-size: large;
+  text-align: center; 
+ padding-top: 10px;
+
+height: 100px;
+width: 200px;
+}
+#id2 p{
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#id2 li:hover{
+  
+  color: black;
+}
+#id2{
+  display: block;
+
+}
+
+
+
+
+
+
+
+
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #05fa2e;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+  @media(max-width:700px){
+    .tooltip{
+      font-size: 15px;
+    }
+    #id2 p{
+      font-weight: 100;
+      font-size: 15px;
+      text-align: left;
+      margin-left: 15px;
+    }
+    #id2 label{
+      
+      margin: 0;
+      width: 300px;
+    }
+  }
+
+
+
+
+
+
+  /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* Black fallback color */
+    background-color: white; /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 10px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px !important; /* Override the font-size specified earlier (36px) for all navigation links */
+}
+.closebtn a :hover{
+  border: 2px solid green;
+  background-color: green;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#home{
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color:white;
+  border:2px solid green ;
+  border-radius: 20px;
+  background-color: green;
+  height: 30px;
+  width: 200px;
+  margin-top: 20px;
+
+
+}
+
+
+/* Tooltip text */
+.tooltip  .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.bar11, .bar22, .bar33{
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin-top: 6px;
+  transition: 0.5s;
+  float: right;
+}
+.sidenav6{
+    
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+}
+.sidenav6 .hive{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+  border: 2px #070707 solid ;
+  background-color: black;
+  
+  
+}
+.sidenav6 .hive:hover{
+  border: 2px solid rgb(78, 76, 76);
+  background-color:rgb(78, 76, 76) ;
+}
+.closebtna{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  color: #f5f8fa;
+  text-decoration: none;
+  border: 2px solid black;
+  background-color: black;
+
+  
+}
+
+.closebtna:hover{
+  border: 2px solid rgb(78, 76, 76);
+  background-color:rgb(78, 76, 76) ;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+  
+}
+
+.hy-ben{
+  display: inline-block;
+  
+  transition: 0.5s;
+  border: 2px solid transparent;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  text-align: left;
+  
+  
+}
+
+
+
+
+
+

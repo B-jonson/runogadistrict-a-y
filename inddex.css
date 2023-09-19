@@ -1,0 +1,126 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    text-align: center;
+    padding-top: 160px;
+}
+.edi{
+    border: 3px solid green;
+    border-radius: 15px;
+    width: 500px;
+    height: 600px;
+    margin-left: 400px;
+
+}
+.edi::after{
+    border: 3px solid green;
+    border-radius: 15px;
+    width: 500px;
+    height: 600px;
+    margin-left: 400px;
+}
+@media(max-width:700px){
+    .edi{
+         margin-left: 80px;
+    }
+}
+.ben{
+   margin-top: 200px;
+}
+label{
+    
+
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.email .password{
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+.email{
+    border: 2px solid green;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    height: 25px;
+    font-weight: 600;
+    transition: 0.5s;
+    
+}
+.email:hover{
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+}
+.password{
+    border: 2px solid green;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    height: 25px;
+    font-weight: 600;
+    transition: 0.5s;
+    
+}
+.password:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
+}
+.wanda{
+    margin-bottom: 20px;
+    
+    
+}
+.next{
+    text-align: right;
+    background-color: white;
+    margin: 30px;
+}
+
+.buton button{
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: green;
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buton button:hover{
+    font-weight: 200px;
+    color: white;
+}
+.next button{
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.next button:hover{
+    color: white;
+}
+.butons{
+    text-align: left;
+}
+.butons button{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.butons button:hover{
+    color:white;
+}
+#ben{
+    display: none;
+}
+#x{
+    display: none;
+    
+}
